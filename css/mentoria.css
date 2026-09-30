@@ -1,0 +1,182 @@
+@font-face{
+    font-family: 'OpenDescarga' ;
+    src: url('../fonts/OpenSans-Regular.ttf') format('woff2');/*  ..  salir del css*/
+}
+/*VARIABLES*/
+:root{
+    /*se declaran con --*/
+    --colorPrincipal:#272829;
+    --colorSecundario: #109b45;
+    --colorObscuro:#2b2b2b;
+    --colorClaro: #fff;
+    --colorFondo: #f4f7f6;
+    --colorBorde: #e0e0e0;
+
+    --fuenteTitulos:'Montserrat';
+    --fuenteCuerpo:'OpenDescargada';
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background-color: var(--colorFondo);
+    color: var(--colorObscuro);
+    line-height: 1.6;
+    font-family: 'OpenDescarga';
+}
+ul{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+    border-left: 20px;
+}
+a{
+    text-decoration: none;
+    font-family: var(--fuenteTitulos);
+}
+nav{
+    display: flex;
+}
+header{
+    display: flex;
+    background-color: var(--colorClaro);
+    justify-content: space-between; 
+    align-items: center;
+    box-shadow: 0 2px 5px rgb(0, 0, 0, 0.15);
+    top: 0;
+    position: sticky;
+    z-index: 1000;
+    padding: 15px 50px;
+}
+nav ul{
+    display: flex;
+    gap: 20px; /* espaciado*/
+    align-items: center;
+}
+nav a{
+
+    font-size: 0.95rem;
+    font-weight: bold;
+    color: inherit; /*el color de los contenedores padre*/
+}
+nav a:hover{
+    color: var(--colorSecundario);
+}
+#logo h1{
+    color: var(--colorPrincipal);
+    font-size: 1.6rem;
+    font-weight: 800;
+}
+h1, h2, h3{
+    font-family:var(--fuenteTitulos);
+    font-weight: 700 ;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+#btn_destacado, #btn_catalogo{
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: 700; /*tipografia gruesa*/
+    background-color: var(--colorPrincipal);
+    color: var(--colorClaro);
+}
+#btn_destacado:hover{
+    background-color: var(--colorClaro);
+    color: var(--colorSecundario);
+}
+
+.contenido_principal{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.mentoria{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 60px 0;
+    flex-wrap: wrap;
+}
+.mentoria_contenido, .img{
+    flex: 1 1 300px;
+}
+.mentoria_contenido h2{
+    font-size: 2.5rem;
+    color: var(--colorPrincipal);
+    line-height: 1.2;
+}
+.mentoria_contenido p{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.img img{
+    width: 100%;
+    height: auto;
+
+}
+/*btn de "ver catalogo"*/
+#btn_informacion {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: var(--colorPrincipal);
+    color: var(--colorClaro);
+    font-family: var(--fuenteTitulos);
+    font-weight: 700;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-top: 10px;
+}
+#btn_informacion:hover{
+    background-color: var(--colorSecundario);
+}
+
+.grid_mentoria {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.tarjeta_reglas, .tarjeta_video {
+    flex: 1;
+    min-width: 300px;
+    background-color: var(--colorClaro);
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid var(--colorBorde);
+}
+
+.lista_reglas {
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+.lista_reglas li {
+    list-style: disc;
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+}
+.contenedor_video {
+    position: relative;
+    padding-bottom: 56.25%; 
+    height: 0;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+.contenedor_video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}

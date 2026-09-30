@@ -1,0 +1,152 @@
+@font-face{
+    font-family: 'OpenDescarga' ;
+    src: url('../fonts/OpenSans-Regular.ttf') format('woff2');/*  ..  salir del css*/
+}
+/*VARIABLES*/
+:root{
+    /*se declaran con --*/
+    --colorPrincipal:#272829;
+    --colorSecundario: #109b45;
+    --colorObscuro:#2b2b2b;
+    --colorClaro: #fff;
+    --colorFondo: #f4f7f6;
+    --colorBorde: #e0e0e0;
+
+    --fuenteTitulos:'Montserrat';
+    --fuenteCuerpo:'OpenDescargada';
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background-color: var(--colorFondo);
+    color: var(--colorObscuro);
+    line-height: 1.6;
+    font-family: 'OpenDescarga';
+}
+ul{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+    border-left: 20px;
+}
+a{
+    text-decoration: none;
+    font-family: var(--fuenteTitulos);
+}
+nav{
+    display: flex;
+}
+header{
+    display: flex;
+    background-color: var(--colorClaro);
+    justify-content: space-between; 
+    align-items: center;
+    box-shadow: 0 2px 5px rgb(0, 0, 0, 0.15);
+    top: 0;
+    position: sticky;
+    z-index: 1000;
+    padding: 15px 50px;
+}
+nav ul{
+    display: flex;
+    gap: 20px; /* espaciado*/
+    align-items: center;
+}
+nav a{
+
+    font-size: 0.95rem;
+    font-weight: bold;
+    color: inherit; /*el color de los contenedores padre*/
+}
+nav a:hover{
+    color: var(--colorSecundario);
+}
+#logo h1{
+    color: var(--colorPrincipal);
+    font-size: 1.6rem;
+    font-weight: 800;
+}
+h1, h3{
+    font-family:var(--fuenteTitulos);
+    font-weight: 700 ;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    padding: 0 10px;
+}
+.contenido_principal{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.inscripcion{
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(253, 253, 253);
+    border: 1px solid black;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgb(0, 0, 0, 0.1);
+}
+.estudio{
+    width: 500px;
+    height: 400px;
+    margin: 60px auto;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+.contenedor_formulario {
+    background-color: var(--colorClaro);
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid var(--colorBorde);
+    max-width: 100;
+}
+
+.contenedor_formulario h2 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+form {
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 0.95rem;
+}
+
+input, select {
+    padding: 8px 10px;
+    border: 1px solid var(--colorBorde);
+    border-radius: 4px;
+    font-size: 0.95rem;
+}
+
+input:focus, select:focus {
+    border-color: var(--colorSecundario);
+    outline: none;
+}
+
+button {
+    padding: 10px;
+    background-color: var(--colorPrincipal);
+    color: var(--colorClaro);
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: var(--colorSecundario);
+}

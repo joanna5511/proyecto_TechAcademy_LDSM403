@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/inscribirse.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+    <title>Document</title>
+</head>
+<body>
+     <header>
+
+        <div id="logo">
+            <h1>TechAcademy</h1>
+        </div>
+
+        <nav class="navPrincipal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="mentoria.html">Mentoria</a></li>
+                <li><a href="inscribirse.html" id="btn_destacado">Inscribirse</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main class="contenido_principal">
+        <div class="inscripcion">
+            <section id="presentacion">
+            <h2>Formulario de inscripción</h2>
+            <p>Completa el formulario para inscribirte en nuestros cursos.</p>
+            <img class="estudio" src="images/estudio.jpg" alt="Estudio">
+            </section>
+
+            <section class="contenedor_formulario">
+                <h2>Inscripción al Curso</h2>
+                
+                <form action="#" method="get">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" placeholder="@gmail.com">
+
+                    <label for="curso">Curso de interés:</label>
+                    <select id="curso" name="curso">
+                        <option value="">Selecciona un curso</option>
+                        <option value="frontend">Integración de Inteligencia Artificial en Aplicaciones Web</option>
+                        <option value="backend">Arquitectura de Software y Desarrollo Backend</option>
+                        <option value="redes">Desarrollo de Aplicaciones Móviles con Android</option>
+                        <option value="bd">Programación con Java y Lógica de Software</option>
+                    </select>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
+            
+            
+        </div>
+    </main>
+</body>
+</html>
